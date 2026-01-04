@@ -1,6 +1,6 @@
 const url = `https://api.thecatapi.com/v1/images/search?limit=1&has_breeds=1`;
 const api_key =
-  "live_zujKRyDljtjBXKu4hX1QNXjjsW2YsuunzrC4azOnPr7hwFHQ5WjjrUMFTlenuC2f";
+  "";
 export let catNames = [];
 export let data = [];
 // export let randomCatName = '';
