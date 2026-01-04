@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.frame {
+    text-align: center;
+}
+
+.board {
+    display: inline-grid;
+    background-color: #F0FFFF;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.board div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(82, 82, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(31, 27, 36);
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 8px black;
+    cursor: pointer;
+    transition: transform 2s;
+
+}
+
+.board div span {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.board div.showing {
+    background-color: blue;
+    transform: matrix3d(1, 0, 4, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.board div.hidden {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.board div.showing span {
+    display: initial;
+    visibility: visible;
+}

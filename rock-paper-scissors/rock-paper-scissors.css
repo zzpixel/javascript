@@ -1,0 +1,30 @@
+body{
+    background-color: lightpink;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(45, 38, 38);
+    text-align: center;
+}
+
+.rock-btn,.paper-btn,.scissor-btn{
+    background-color: pink;
+    cursor: pointer;
+    border-width: 10px;
+    border-color: rgb(130, 96, 104);
+    border-radius: 100px;
+}
+
+.rock-btn img,.paper-btn img,.scissor-btn img{
+width: 250px;
+}
+
+.move-icon{
+    width: 80px;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+}

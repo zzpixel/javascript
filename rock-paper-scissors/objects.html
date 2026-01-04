@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+    let person = {
+        age:18,
+        name:"Gavi",
+        city: "Beachwood"
+    };
+
+    const Product = {
+        name: "socks",
+        rating: {
+            stars: 5,
+            count: 87,
+        },
+
+        data: function () {
+            console.log("Abcedfghijklmnopqrstuvwxyz")
+        },
+
+    };
+    console.log(person);
+    const stringedObject = JSON.stringify(person);
+    console.log(stringedObject);
+    
+    const parsedObject = JSON.parse(stringedObject);
+    console.log(parsedObject);
+    </script>
+</body>
+</html>
